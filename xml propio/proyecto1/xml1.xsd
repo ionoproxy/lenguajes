@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.iessonferrer.net/jgonzalez/notas"
+elementFormDefault="qualified">
+
+<xsd:element name="notas" xmlns="http://www.iessonferrer.net/jgonzalez/notas">
+<xsd:complexType>
+<xsd:sequence>
+
+
+
+<xsd:element name="alumno">
+<xsd:complexType>
+<xsd:sequence>
+
+<xsd:element name="nombre" type="xsd:string"/>
+
+<xsd:element name="primeraEvaluacion" type="nota">
+
+
+</xsd:element>
+
+<xsd:element name="segundaEvaluacion" type="nota">
+
+</xsd:element>
+
+<xsd:element name="terceraEvaluacion" type="nota">
+
+</xsd:element>
+
+
+
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+
+
+</xsd:sequence>
+</xsd:complexType>
+
+
+</xsd:element>
+
+<xsd:simpleType name="nota">
+
+<xsd:restriction base="xsd:integer">
+<xsd:minInclusive value="0"/>
+<xsd:maxInclusive value="10"/>
+
+
+</xsd:restriction>
+</xsd:simpleType>
+
+
+
+</xsd:schema>
