@@ -15,17 +15,14 @@ elementFormDefault="qualified">
 
 			<xsd:element name="nombre" type="xsd:string"/>
 
-			<xsd:element name="primeraEvaluacion" type="nota">
+			<xsd:element name="evaluacion">
+			<xsd:complexType>
+			<xsd:sequence>
+			<xsd:element name="nombre" type="xsd:string"/>
+			<xsd:element name="nota" type="nota"/>
 
-
-			</xsd:element>
-
-			<xsd:element name="segundaEvaluacion" type="nota">
-
-			</xsd:element>
-
-			<xsd:element name="terceraEvaluacion" type="nota">
-
+			<xsd:sequence>
+			</xsd:complexType>
 			</xsd:element>
 
 

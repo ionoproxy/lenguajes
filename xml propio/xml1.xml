@@ -6,15 +6,22 @@ xsi:schemaLocation="http://www.iessonferrer.net/jgonzalez/notas notas">
 <alumno>
 <nombre></nombre>
 
-<primeraEvaluacion>6
-</primeraEvaluacion>
+<evaluacion>
 
-<segundaEvaluacion>8
-</segundaEvaluacion>
+<nombre></nombre>
+<nota>9</nota>
 
-<terceraEvaluacion>10
-</terceraEvaluacion>
+<evaluacion>
 
+<evaluacion>
+<nombre></nombre>
+<nota>8</nota>
+<evaluacion>
+
+<evaluacion>
+<nombre></nombre>
+<nota>10</nota>
+<evaluacion>
 
 
 </alumno>
