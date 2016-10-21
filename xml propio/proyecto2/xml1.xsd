@@ -3,7 +3,7 @@
 targetNamespace="http://www.iessonferrer.net/jgonzalez/notas"
 elementFormDefault="qualified">
 
-<xsd:element name="subasta" xmlns="http://www.iessonferrer.net/jgonzalez/notas">
+<xsd:element name="subasta" xmlns="http://www.iessonferrer.net/jgonzalez/subasta">
 		<xsd:complexType>
 <xsd:all>
 
