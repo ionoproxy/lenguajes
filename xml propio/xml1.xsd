@@ -15,7 +15,7 @@ elementFormDefault="qualified">
 
 			<xsd:element name="nombre" type="xsd:string"/>
 
-			<xsd:element name="evaluacion">
+			<xsd:element name="evaluacion" minOccurs="3" maxOccurs="3">
 			<xsd:complexType>
 			<xsd:sequence>
 			<xsd:element name="nombre" type="xsd:string"/>
