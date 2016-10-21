@@ -5,12 +5,12 @@ elementFormDefault="qualified">
 
 <xsd:element name="subasta" xmlns="http://www.iessonferrer.net/jgonzalez/subasta">
 		<xsd:complexType>
-<xsd:all>
+<xsd:sequence>
 
 
 
 
-<xsd:element name="objeto" maxOccurs="10">
+<xsd:element name="objeto" minOccurs="0" maxOccurs="10">
 	<xsd:complexType>
 <xsd:sequence>
 
@@ -27,7 +27,7 @@ elementFormDefault="qualified">
 
 
 
-</xsd:all>
+</xsd:sequence>
 </xsd:complexType>
 
 
@@ -38,8 +38,8 @@ elementFormDefault="qualified">
 
 <xsd:simpleType name="precioRestringido">
 <xsd:restriction base="xsd:decimal">
-<xsd:fractionDigits value="6"/>
-<xsd:totalDigits value="2"/>
+<xsd:fractionDigits value="2"/>
+<xsd:totalDigits value="6"/>
 <xsd:minInclusive value="40"/>
 
 
