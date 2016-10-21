@@ -35,7 +35,7 @@ elementFormDefault="qualified">
 
 
 <xsd:simpleType name="precioRestringido">
-<xsd:restriction base="xsd:decimal">
+<xsd:restriction base="xsd:integer">
 <xsd:maxLength value="6"/>
 <xsd:totalDigits value="2"/>
 
