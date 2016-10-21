@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subasta xmlns="http://www.iessonferrer.net/jgonzalez/notas"
+<subasta xmlns="http://www.iessonferrer.net/jgonzalez/subasta"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.iessonferrer.net/jgonzalez/notas notas">
+xsi:schemaLocation="http://www.iessonferrer.net/jgonzalez/subasta subasta">
 
 <objeto>
 
 
 <propietario></propietario>
-<precio></precio>
+<precio>220.00</precio>
 
 
 </objeto>
