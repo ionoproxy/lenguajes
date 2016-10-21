@@ -21,7 +21,7 @@ elementFormDefault="qualified">
 			<xsd:element name="nombre" type="xsd:string"/>
 			<xsd:element name="nota" type="nota"/>
 
-			<xsd:sequence>
+			</xsd:sequence>
 			</xsd:complexType>
 			</xsd:element>
 
