@@ -7,6 +7,9 @@ elementFormDefault="qualified">
 		<xsd:complexType>
 <xsd:all>
 
+
+
+
 <xsd:element name="objeto">
 	<xsd:complexType>
 <xsd:sequence>
@@ -17,13 +20,19 @@ elementFormDefault="qualified">
 
 
 </xsd:sequence>
-	</xsd:complexType>
+</xsd:complexType>
 </xsd:element>
 
-		</xsd:complexType>
+
+
+
+
 </xsd:all>
 </xsd:complexType>
 </xsd:element>
+
+
+
 
 <xsd:simpleType name="precioRestringido">
 <xsd:restriction base="xsd:decimal">
@@ -35,5 +44,9 @@ elementFormDefault="qualified">
 
 
 </xsd:simpleType>
+
+
+
+
 
 </xsd:schema>
