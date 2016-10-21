@@ -33,8 +33,8 @@ elementFormDefault="qualified">
 
 
 
-
-<xsd:simpleType name="precioRestringido">
+<xsd:element name="precioRestringido">
+<xsd:simpleType>
 <xsd:restriction base="xsd:integer">
 <xsd:maxLength value="6"/>
 <xsd:totalDigits value="2"/>
@@ -42,8 +42,8 @@ elementFormDefault="qualified">
 
 </xsd:restriction>
 
-
-</xsd:simpleType>
+<xsd:simpleType>
+</xsd:element>
 
 
 
