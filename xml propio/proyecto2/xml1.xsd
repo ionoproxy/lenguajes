@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-targetNamespace="http://www.iessonferrer.net/jgonzalez/notas"
+targetNamespace="http://www.iessonferrer.net/jgonzalez/subasta"
 elementFormDefault="qualified">
 
 <xsd:element name="subasta" xmlns="http://www.iessonferrer.net/jgonzalez/subasta">
@@ -10,12 +10,12 @@ elementFormDefault="qualified">
 
 
 
-<xsd:element name="objeto">
+<xsd:element name="objeto" maxOccurs="10">
 	<xsd:complexType>
 <xsd:sequence>
 
 <xsd:element name="propietario" type="xsd:string"/>
-<xsd:element name="precio" type="xsd:precioRestringido"/>
+<xsd:element name="precio" type="precioRestringido"/>
 
 
 
@@ -37,9 +37,10 @@ elementFormDefault="qualified">
 
 
 <xsd:simpleType name="precioRestringido">
-<xsd:restriction base="xsd:integer">
-<xsd:maxLength value="6"/>
+<xsd:restriction base="xsd:decimal">
+<xsd:fractionDigits value="6"/>
 <xsd:totalDigits value="2"/>
+<xsd:minInclusive value="40"/>
 
 
 </xsd:restriction>
