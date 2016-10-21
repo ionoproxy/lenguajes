@@ -4,7 +4,26 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.iessonferrer.net/jgonzalez/empleados empleados">
 
 
+<empleado>
 
+<nombre id=""> </nombre>
+<inicio></inicio>
+<puesto></puesto>
+<jefe id=""></jefe>
+<salario></salario>
+<titulo></titulo>
+<sede></sede>
+
+<observaciones>
+
+<merito></merito>
+
+<incidencia></incidencia>
+
+
+</observaciones>
+
+</empleado>
 
 
 

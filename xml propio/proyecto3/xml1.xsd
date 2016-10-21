@@ -3,7 +3,63 @@
 targetNamespace="http://www.iessonferrer.net/jgonzalez/subasta"
 elementFormDefault="qualified">
 
+<xsd:element name="empleados" xmlns="http://www.iessonferrer.net/jgonzalez/subasta">
+<xsd:complexType>
+<xsd:sequence>
 
+
+<xsd:element name="empleado" type="empleadoInfo">
+<xsd:complexType>
+
+
+
+
+
+</xsd:complexType>
+</xsd:element>
+
+
+
+
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+
+<xsd:complexType name="empleadoInfo">
+<xsd:sequence>
+<xsd:element name="nombre" attribute="id" type="xsd:string"/>
+
+<xsd:element name="puesto" type="xsd:string"/>
+
+<xsd:element name="jefe" attribute="id" type="xsd:string"/>
+
+<xsd:element name="salario" type="xsd:integer"/>
+
+<xsd:element name="titulo" type="xsd:string"/>
+
+<xsd:element name="sede" type="xsd:string"/>
+
+
+
+<xsd:element name="observaciones">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="incidencia" type="xsd:string"/>
+<xsd:element name="merito" type="xsd:string"/>
+
+
+
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+
+
+
+
+</xsd:sequence>
+
+
+</xsd:complexType>
 
 
 
