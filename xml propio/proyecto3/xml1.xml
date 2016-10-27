@@ -8,7 +8,9 @@ xsi:schemaLocation="http://www.iessonferrer.net/jgonzalez/empleados empleados">
 
 <nombre id=""> </nombre>
 <inicio></inicio>
-<puesto></puesto>
+<puestoActual></puestoActual>
+
+<puestosPasados></puestosPasados>
 <jefe id=""></jefe>
 <salario></salario>
 <titulo></titulo>

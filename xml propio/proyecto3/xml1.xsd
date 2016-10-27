@@ -29,7 +29,10 @@ elementFormDefault="qualified">
 <xsd:sequence>
 <xsd:element name="nombre" attribute="id" type="xsd:string"/>
 
-<xsd:element name="puesto" type="xsd:string"/>
+<xsd:element name="puestoActual" type="xsd:string"/>
+
+<xsd:element name="puestosPasados" type="xsd:string"/>
+
 
 <xsd:element name="jefe" attribute="id" type="xsd:string"/>
 
