@@ -3,6 +3,262 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.iessonferrer.net/jgonzalez/horari horari">
 
+<professor inicials="AB">
+
+
+</professor>
+
+<professor inicials="BA">
+
+
+</professor>
+
+
+<professor inicials="CA">
+
+
+</professor>
+
+<professor inicials="CB">
+
+
+</professor>
+
+<professor inicials="CC">
+
+
+</professor>
+
+
+<modul nomCurt="AB">
+<nom>AB</nom>
+<titular>AB</titular>
+<descripcio></descripcio>
+
+</modul>
+
+<modul nomCurt="BA">
+<nom>BA</nom>
+<titular>BA</titular>
+<descripcio></descripcio>
+
+</modul>
+
+
+<modul nomCurt="CA">
+<nom>CA</nom>
+<titular>CA</titular>
+<descripcio></descripcio>
+
+</modul>
+
+
+<modul nomCurt="CB">
+<nom>CB</nom>
+<titular>CB</titular>
+<descripcio></descripcio>
+
+</modul>
+
+
+<modul nomCurt="CC">
+<nom>CC</nom>
+<titular>CC</titular>
+<descripcio></descripcio>
+
+</modul>
+
+
+
+
+<sessio id="1">
+
+<inici>15:10:00</inici>
+
+<fi>16:00:00</fi>
+
+</sessio>
+
+<sessio id="2">
+
+<inici>15:10:00</inici>
+
+<fi>16:00:00</fi>
+
+</sessio>
+
+
+
+
+
+<sessio id="3">
+
+<inici>15:10:00</inici>
+
+<fi>16:00:00</fi>
+
+</sessio>
+
+
+
+
+<sessio id="4">
+
+<inici>15:10:00</inici>
+
+<fi>16:00:00</fi>
+
+</sessio>
+
+
+
+
+<sessio id="5">
+
+<inici>15:10:00</inici>
+
+<fi>16:00:00</fi>
+
+</sessio>
+
+
+
+
+
+<sessio id="6">
+
+<inici>15:10:00</inici>
+
+<fi>16:00:00</fi>
+
+</sessio>
+
+
+
+
+<sessio id="7">
+
+<inici>15:10:00</inici>
+
+<fi>16:00:00</fi>
+
+</sessio>
+
+
+
+
+
+<sessio id="8">
+
+<inici>15:10:00</inici>
+
+<fi>16:00:00</fi>
+
+</sessio>
+
+
+
+
+
+
+
+
+
+
+
+<dia>
+
+<nom></nom>
+
+<sessio num="1">AB</sessio>
+
+<sessio num="2">CC</sessio>
+<sessio num="3">CA</sessio>
+
+
+
+<sessio num="4">AB</sessio>
+
+<sessio num="5">BA</sessio>
+
+<sessio num="6">CC</sessio>
+
+</dia>
+
+<dia>
+
+<nom></nom>
+
+<sessio num="1">AB</sessio>
+
+<sessio num="2">CC</sessio>
+<sessio num="3">CA</sessio>
+
+
+
+<sessio num="4">AB</sessio>
+
+<sessio num="5">BA</sessio>
+
+<sessio num="6">CC</sessio>
+</dia>
+
+<dia>
+
+<nom></nom>
+
+<sessio num="1">AB</sessio>
+
+<sessio num="2">CC</sessio>
+<sessio num="3">CA</sessio>
+
+
+
+<sessio num="4">AB</sessio>
+
+<sessio num="5">BA</sessio>
+
+<sessio num="6">CC</sessio>
+
+</dia>
+
+<dia>
+
+<nom></nom>
+
+<sessio num="1">AB</sessio>
+
+<sessio num="2">CC</sessio>
+<sessio num="3">CA</sessio>
+
+
+
+<sessio num="4">AB</sessio>
+
+<sessio num="5">BA</sessio>
+
+<sessio num="6">CC</sessio>
+
+</dia>
+
+<dia>
+
+<nom></nom>
+
+<sessio num="1">AB</sessio>
+
+<sessio num="2">CC</sessio>
+<sessio num="3">CA</sessio>
+
+
+
+<sessio num="4">AB</sessio>
+
+<sessio num="5">BA</sessio>
+
+<sessio num="6">CC</sessio>
+
+</dia>
 
 
 
