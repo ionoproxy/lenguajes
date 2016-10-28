@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:h="http://www.iessonferrer.net/jgonzalez/horari"
+targetNamespace="http://www.iessonferrer.net/jgonzalez/horari"
+elementFormDefault="qualified">
+<xsd:element name="horari">
+    <xsd:complexType>
+        <xsd:sequence>
+        <xsd:element name="professor" maxOccurs="10">
+            <xsd:complexType>
+                <xsd:simpleContent>
+                    <xsd:extension base="xsd:string">
+                        <xsd:attribute name="inicials" type="h:inicials" use="required"/>
+                    </xsd:extension>
+                </xsd:simpleContent>
+            </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="modul" maxOccurs="10">
+            <xsd:complexType>
+                <xsd:all>
+                    <xsd:element name="nom" type="xsd:string"/>
+                    <xsd:element name="titular" type="xsd:string"/>
+                    <xsd:element name="descripcio" type="xsd:string"/>
+                </xsd:all>
+                <xsd:attribute name="nomCurt" type="h:inicials" use="required"/>
+            </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="sessio" maxOccurs="8">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element name="inici" type="xsd:time"/>
+                    <xsd:element name="fi" type="xsd:time"/>
+                </xsd:sequence>
+                <xsd:attribute name="id" type="xsd:integer" use="required"/>
+            </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="dia" minOccurs="5" maxOccurs="5">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element name="nom" type="xsd:string"/>
+                    <xsd:element name="sessio" minOccurs="6" maxOccurs="6">
+                        <xsd:complexType>
+                            <xsd:simpleContent>
+                                <xsd:extension base="h:inicials">
+                                    <xsd:attribute name="num" type="xsd:integer" use="required"/>
+                                </xsd:extension>
+                            </xsd:simpleContent>
+                        </xsd:complexType>    
+                    </xsd:element>                    
+                </xsd:sequence>
+            </xsd:complexType>
+
+        </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:key name="professorkey">
+        <xsd:selector xpath="h:professor"/>
+        <xsd:field xpath="@inicials"/>
+    </xsd:key>
+    <xsd:key name="modulkey">
+        <xsd:selector xpath="h:modul"/>
+        <xsd:field xpath="@nomCurt"/>
+    </xsd:key>
+    <xsd:key name="sessiokey">
+        <xsd:selector xpath="h:sessio"/>
+        <xsd:field xpath="@id"/>
+    </xsd:key>
+    <xsd:keyref name="professorkeyref" refer="h:professorkey">
+        <xsd:selector xpath="h:modul"/>
+        <xsd:field xpath="h:titular"/>
+    </xsd:keyref>
+    <xsd:keyref name="modulkeyref" refer="h:modulkey">
+        <xsd:selector xpath="h:dia/h:sessio"/>
+        <xsd:field xpath="."/>
+    </xsd:keyref>
+    <xsd:keyref name="sessiokeyref" refer="h:sessiokey">
+        <xsd:selector xpath="h:dia/h:sessio"/>
+        <xsd:field xpath="@num"/>
+    </xsd:keyref>
+
+</xsd:element>
+<xsd:simpleType name="inicials">
+    <xsd:restriction base="xsd:string">
+        <xsd:pattern value="[A-Z]{2}|[A-Z]{3}"/>
+    </xsd:restriction>
+</xsd:simpleType>
+</xsd:schema>
